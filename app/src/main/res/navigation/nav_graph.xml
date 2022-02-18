@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment2">
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.unitconversion.screens.loginScreen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_menuFragment2"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/loginFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment2_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:popUpTo="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.unitconversion.screens.menuScreen.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment2_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_menuFragment_to_convertorFragment"
+            app:destination="@id/convertorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.unitconversion.screens.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/convertorFragment"
+        android:name="com.example.unitconversion.screens.menuScreen.ConvertorFragment"
+        android:label="fragment_convertor"
+        tools:layout="@layout/fragment_convertor" >
+        <argument
+            android:name="conv_type"
+            app:argType="string" />
+    </fragment>
+</navigation>

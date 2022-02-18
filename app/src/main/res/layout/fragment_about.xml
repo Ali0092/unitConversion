@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".screens.about.AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This is a VALUE Conversion application which can convert all the TIME, LENGTH, WEIGHT and TEMPERATURE units....😊"
+        android:textSize="25dp"
+        android:textColor="@color/green_105"
+        android:gravity="center"/>
+
+</FrameLayout>

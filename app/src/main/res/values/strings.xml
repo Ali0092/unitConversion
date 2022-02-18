@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">unitConversion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="length_unit">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+    </string-array>
+
+    <string-array name="time_unit">
+        <item>msec</item>
+        <item>sec</item>
+        <item>min</item>
+        <item>hrs</item>
+    </string-array>
+
+    <string-array name="weight_unit">
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="temp_unit">
+        <item>F</item>
+        <item>K</item>
+        <item>C</item>
+    </string-array>
+</resources>
